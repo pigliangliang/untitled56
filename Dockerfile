@@ -2,9 +2,9 @@ FROM python:3.5
 
 RUN apt-get update \
     && rm -rf /var/lib/apt/lists/*
-RUN apt-get install git \
+#RUN apt-get install git \
 
-   && git clone https://github.com/pigliangliang/untitled56.git
+ #  && git clone https://github.com/pigliangliang/untitled56.git
 
 RUN pip install django
 
