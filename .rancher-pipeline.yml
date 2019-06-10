@@ -4,9 +4,9 @@ stages:
   - publishImageConfig:
       dockerfilePath: ./Dockerfile
       buildContext: .
-      tag: myweb:1.0
+      tag: harbor.big2.com/myweb:1.0
       pushRemote: true
-      registry: https://cluster.rch.com
+      registry: 'harbor.big2.com '
 - name: deploy
   steps:
   - applyYamlConfig:
