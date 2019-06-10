@@ -4,7 +4,7 @@ stages:
   - publishImageConfig:
       dockerfilePath: ./Dockerfile
       buildContext: .
-      tag: myweb
+      tag: myweb:1.0
       pushRemote: true
       registry: http://harbor.big2.com
 - name: deploy
