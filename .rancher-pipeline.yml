@@ -6,7 +6,7 @@ stages:
       buildContext: .
       tag: myweb:1.0
       pushRemote: true
-      registry: http://harbor.big2.com
+      registry: https://cluster.rch.com
 - name: deploy
   steps:
   - applyYamlConfig:
