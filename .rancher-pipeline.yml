@@ -2,7 +2,7 @@ stages:
 - name: compile
   steps:
   - publishImageConfig:
-      dockerfilePath: Dockerfile
+      dockerfilePath: ./Dockerfile
       buildContext: .
       tag: myweb
       pushRemote: true
