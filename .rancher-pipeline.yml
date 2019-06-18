@@ -7,7 +7,7 @@ stages:
       version: V2
       gitUrl: https://github.com/pigliangliang/untitled56.git
       gitBranch: master
-      gitAuthor: zhu
+      gitAuthor: 836904717@qq.com
       gitEmail: ZHU@qq.com
     envFrom:
     - sourceName: piggithub
