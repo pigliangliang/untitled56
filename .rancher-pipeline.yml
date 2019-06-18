@@ -4,7 +4,7 @@ stages:
   - publishImageConfig:
       dockerfilePath: ./Dockerfile
       buildContext: .
-      tag: myweb
+      tag: harbor.big2.com/library/myweb
       pushRemote: true
       registry: harbor.big2.com
 timeout: 60
