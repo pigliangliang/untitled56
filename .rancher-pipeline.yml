@@ -5,7 +5,7 @@ stages:
       path: ./
       catalogTemplate: TEST001
       version: V2
-      gitUrl: https://github.com/pigliangliang/
+      gitUrl: https://github.com/pigliangliang/untitled56.git
       gitBranch: master
       gitAuthor: zhu
       gitEmail: ZHU@qq.com
