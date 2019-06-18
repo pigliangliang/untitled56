@@ -1,20 +1,11 @@
 stages:
 - name: deploy
   steps:
-  - publishCatalogConfig:
-      path: ./
-      catalogTemplate: TEST001
-      version: V2
-      gitUrl: https://github.com/pigliangliang/untitled56.git
-      gitBranch: master
-      gitAuthor: 836904717@qq.com
-      gitEmail: ZHU@qq.com
-    envFrom:
-    - sourceName: piggithubuser
-      sourceKey: USERNAME
-      targetKey: USERNAME
-    - sourceName: piggithubuser
-      sourceKey: PASSWORD
-      targetKey: PASSWORD
+  - publishImageConfig:
+      dockerfilePath: ./Dockerfile
+      buildContext: .
+      tag: myweb:v1
+      pushRemote: true
+      registry: harbor.big2.com
 timeout: 60
 notification: {}
