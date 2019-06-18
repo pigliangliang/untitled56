@@ -5,6 +5,7 @@ stages:
       dockerfilePath: ./Dockerfile
       buildContext: .
       tag: myweb:v1
+      pushRemote: true
       registry: harbor.big2.com
 timeout: 60
 notification: {}
