@@ -8,7 +8,20 @@ stages:
       registry: 127.0.0.1:34646
 - name: deploy
   steps:
-  - applyYamlConfig:
-      path: ./deployment.yaml
+  - publishCatalogConfig:
+      path: ./
+      catalogTemplate: TEST001
+      version: V2
+      gitUrl: https://github.com/pigliangliang/untitled56.git
+      gitBranch: master
+      gitAuthor: zhu
+      gitEmail: ZHU@qq.com
+    envFrom:
+    - sourceName: s-mfnb8
+      sourceKey: USERNAME
+      targetKey: USERNAME
+    - sourceName: s-mfnb8
+      sourceKey: PASSWORD
+      targetKey: PASSWORD
 timeout: 60
 notification: {}
