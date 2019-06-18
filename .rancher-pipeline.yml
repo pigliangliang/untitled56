@@ -17,10 +17,10 @@ stages:
       gitAuthor: zhu
       gitEmail: ZHU@qq.com
     envFrom:
-    - sourceName: s-mfnb8
+    - sourceName: piggithub
       sourceKey: USERNAME
       targetKey: USERNAME
-    - sourceName: s-mfnb8
+    - sourceName: piggithub
       sourceKey: PASSWORD
       targetKey: PASSWORD
 timeout: 60
