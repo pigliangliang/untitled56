@@ -1,18 +1,11 @@
 stages:
-- name: compile
-  steps:
-  - publishImageConfig:
-      dockerfilePath: ./Dockerfile
-      buildContext: .
-      tag: myweb
-      registry: 127.0.0.1:34646
 - name: deploy
   steps:
   - publishCatalogConfig:
       path: ./
       catalogTemplate: TEST001
       version: V2
-      gitUrl: https://github.com/pigliangliang/untitled56.git
+      gitUrl: https://github.com/pigliangliang/
       gitBranch: master
       gitAuthor: zhu
       gitEmail: ZHU@qq.com
